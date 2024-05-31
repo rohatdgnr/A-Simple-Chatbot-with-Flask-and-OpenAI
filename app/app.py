@@ -14,7 +14,7 @@ def chat():
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # Yeni API modelini kullanıyoruz
+            model="gpt-3.5-turbo",  
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": user_input},
@@ -23,7 +23,7 @@ def chat():
         reply = response.choices[0].message['content'].strip()
         return jsonify({"reply": reply})
     except Exception as e:
-        print(traceback.format_exc())  # Hata mesajını yazdır
+        print(traceback.format_exc())  
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
