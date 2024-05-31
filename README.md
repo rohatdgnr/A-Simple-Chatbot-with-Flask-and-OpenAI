@@ -1,4 +1,4 @@
-#Flask ve OpenAI ile Basit Bir Chatbot 
+Flask ve OpenAI ile Basit Bir Chatbot 
 
 Bu proje, Flask ve OpenAI kullanarak basit bir sohbet botu oluşturmayı göstermektedir. Proje, kullanıcılardan gelen mesajları alır ve OpenAI'nin GPT-3.5 modelini kullanarak yanıtlar üretir.
 
